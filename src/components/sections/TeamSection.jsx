@@ -6,7 +6,7 @@ function TeamSection() {
   return (
     <section
       id="team"
-      className="py-40 bg-[#050505]"
+      className="py-20 md:py-28 lg:py-40 bg-[#050505]"
     >
       <Container>
 

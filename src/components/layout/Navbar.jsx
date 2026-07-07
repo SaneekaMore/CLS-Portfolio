@@ -69,20 +69,21 @@ function Navbar() {
         `}
       >
         <Container>
-          <nav className="flex items-center justify-between py-8">
-
-            {/* Logo */}
+          <nav className="flex items-center justify-between py-5 sm:py-6 lg:py-8">
 
             <Link
               to="/"
-              className="flex items-center gap-4 pl-6 lg:pl-8"
+              className="flex items-center gap-3 sm:gap-4 pl-4 sm:pl-6 lg:pl-8"
             >
+
               <img
                 src={logoWhite}
                 alt="Content With Lens"
                 className="
-                  w-12
-                  h-12
+                  w-10
+                  h-10
+                  sm:w-12
+                  sm:h-12
                   lg:w-14
                   lg:h-14
                   object-contain
@@ -94,12 +95,15 @@ function Navbar() {
               />
 
               <div>
+
                 <h1
                   className="
                     font-['Syne']
-                    text-xl
+                    text-base
+                    sm:text-lg
+                    lg:text-xl
                     leading-none
-                    tracking-[0.25em]
+                    tracking-[0.22em]
                     font-bold
                     text-white
                   "
@@ -110,26 +114,34 @@ function Navbar() {
                 <p
                   className="
                     mt-1
-                    text-[11px]
+                    text-[8px]
+                    sm:text-[10px]
+                    lg:text-[11px]
                     uppercase
-                    tracking-[0.42em]
+                    tracking-[0.30em]
+                    sm:tracking-[0.42em]
                     text-gray-400
                   "
                 >
                   WITH LENS
                 </p>
-              </div>
-            </Link>
 
-            {/* Menu Button */}
+              </div>
+
+            </Link>
 
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="
-                mr-8
+                mr-4
+                sm:mr-6
                 lg:mr-12
-                w-14
-                h-14
+                w-11
+                h-11
+                sm:w-12
+                sm:h-12
+                lg:w-14
+                lg:h-14
                 rounded-full
                 border
                 border-white/20
@@ -143,14 +155,12 @@ function Navbar() {
                 hover:text-black
               "
             >
-              {menuOpen ? <X size={26} /> : <Menu size={26} />}
+              {menuOpen ? <X size={22} /> : <Menu size={22} />}
             </button>
 
           </nav>
         </Container>
       </header>
-
-      {/* Fullscreen Menu */}
 
       {menuOpen && (
         <div
@@ -164,7 +174,7 @@ function Navbar() {
             justify-center
           "
         >
-          <div className="text-center space-y-10">
+          <div className="text-center space-y-8 sm:space-y-10">
 
             {["About", "Services", "Work", "Team", "Contact"].map((item) => (
               <button
@@ -176,7 +186,8 @@ function Navbar() {
                   bg-transparent
                   text-center
                   font-['Syne']
-                  text-5xl
+                  text-4xl
+                  sm:text-5xl
                   md:text-7xl
                   hover:text-red-500
                   transition

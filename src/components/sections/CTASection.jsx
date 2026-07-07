@@ -3,7 +3,7 @@ import Container from "../ui/Container";
 
 function CTASection() {
   return (
-    <section className="py-40 bg-[#050505]">
+    <section className="py-20 md:py-28 lg:py-40 bg-[#050505]">
 
       <Container>
 
@@ -50,7 +50,7 @@ function CTASection() {
               className="
                 font-['Syne']
                 text-5xl
-                md:text-7xl
+                md:text-4xl sm:text-5xl lg:text-7xl
                 lg:text-[90px]
                 leading-[0.9]
                 tracking-[-0.05em]

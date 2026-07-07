@@ -4,7 +4,7 @@ function AboutSection() {
   return (
     <section
       id="about"
-      className="py-40 bg-[#050505]"
+      className="py-20 md:py-28 lg:py-40 bg-[#050505]"
     >
       <Container>
 
@@ -23,7 +23,7 @@ function AboutSection() {
               font-['Syne']
               text-5xl
               md:text-6xl
-              lg:text-7xl
+              lg:text-4xl sm:text-5xl lg:text-7xl
               font-bold
               leading-[0.95]
               tracking-[-0.04em]
@@ -61,7 +61,7 @@ function AboutSection() {
 
           <div className="grid grid-cols-2 gap-6">
 
-            <div className="border border-white/10 rounded-3xl p-8 bg-white/5 backdrop-blur-sm">
+            <div className="border border-white/10 rounded-3xl p-5 md:p-8 bg-white/5 backdrop-blur-sm">
 
               <h3 className="text-5xl font-bold mb-4">3+</h3>
 
@@ -71,7 +71,7 @@ function AboutSection() {
 
             </div>
 
-            <div className="border border-white/10 rounded-3xl p-8 bg-white/5 backdrop-blur-sm">
+            <div className="border border-white/10 rounded-3xl p-5 md:p-8 bg-white/5 backdrop-blur-sm">
 
               <h3 className="text-3xl font-bold mb-4">
                 Pune
@@ -83,7 +83,7 @@ function AboutSection() {
 
             </div>
 
-            <div className="border border-white/10 rounded-3xl p-8 bg-white/5 backdrop-blur-sm">
+            <div className="border border-white/10 rounded-3xl p-5 md:p-8 bg-white/5 backdrop-blur-sm">
 
               <h3 className="text-3xl font-bold mb-4">
                 India

@@ -7,7 +7,7 @@ function WorkSection() {
   return (
     <section
       id="work"
-      className="py-40 bg-[#050505]"
+      className="py-20 md:py-28 lg:py-40 bg-[#050505]"
     >
       <Container>
         <SectionTitle
@@ -21,7 +21,7 @@ function WorkSection() {
               key={project.id}
               href={project.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="
                 group
                 overflow-hidden

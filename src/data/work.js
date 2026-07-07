@@ -5,7 +5,7 @@ const work = [
     category: "Short Film",
     year: "2026",
     image: "/images/projects/adhoori-baat.png",
-    link: "https://www.youtube.com/@clstudios6900",
+    link: "https://www.youtube.com/watch?v=a_XR7FWz-oM",
   },
   {
     id: 2,
@@ -13,15 +13,15 @@ const work = [
     category: "Brand Film",
     year: "2026",
     image: "/images/projects/phir-chalte-hain.jpeg",
-    link: "https://www.youtube.com/@clstudios6900",
+    link: "https://www.youtube.com/watch?v=hRGYMu_xWcY",
   },
   {
     id: 3,
-    title: "TEDx Chinchwad",
-    category: "Event Coverage",
+    title: "Product Photography",
+    category: "Product Shoot",
     year: "2025",
     image: "/images/projects/tedx.JPG",
-    link: "https://www.linkedin.com/company/content-with-lens/",
+    link: "https://drive.google.com/drive/folders/1kXVBSrRBTtEcpGqwxwmpNoNZe0pEt14y",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const work = [
     category: "Corporate Photography",
     year: "2025",
     image: "/images/projects/industrial.JPG",
-    link: "#",
+    link: "https://drive.google.com/drive/folders/1zMbZbzpIkkfejv8JKTGZh6lnEURwcc8c",
   },
   {
     id: 5,

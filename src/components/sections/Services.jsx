@@ -18,7 +18,7 @@ function Services() {
   return (
     <section
       id="services"
-      className="py-40 bg-[#050505]"
+      className="py-20 md:py-28 lg:py-40 bg-[#050505]"
     >
       <Container>
 
@@ -35,7 +35,7 @@ function Services() {
             font-['Syne']
             text-5xl
             md:text-6xl
-            lg:text-7xl
+            lg:text-4xl sm:text-5xl lg:text-7xl
             font-bold
             leading-[0.95]
             tracking-[-0.04em]"
