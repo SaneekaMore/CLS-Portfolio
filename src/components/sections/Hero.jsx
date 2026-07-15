@@ -1,30 +1,27 @@
 import Button from "../ui/Button";
 import Container from "../ui/Container";
-import heroVideo from "../../assets/videos/hero/demo-reel.mp4";
+import heroImage from "../../assets/images/hero-team.webp";
 
 function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
 
-      {/* Background Video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
+      {/* Background Image */}
+      <img
+        src={heroImage}
+        alt="Content With Lens Team"
         className="
           absolute
           inset-0
           w-full
           h-full
           object-cover
-          scale-110
-          blur-[2px]
+          object-[65%_center]
           -z-30
+          select-none
+          pointer-events-none
         "
-      >
-        <source src={heroVideo} type="video/mp4" />
-      </video>
+      />
 
       {/* Cinematic Overlay */}
       <div
@@ -33,35 +30,19 @@ function Hero() {
           inset-0
           -z-20
           bg-gradient-to-r
-          from-black/80
+          from-black/88
           via-black/55
-          to-black/75
+          to-black/82
         "
       />
 
+      {/* Vignette */}
       <div
         className="
           absolute
           inset-0
           -z-20
-          bg-[radial-gradient(circle_at_center,transparent_15%,rgba(0,0,0,0.65)_100%)]
-        "
-      />
-
-      {/* Background Glow */}
-      <div
-        className="
-          pointer-events-none
-          absolute
-          left-[-250px]
-          top-1/2
-          -translate-y-1/2
-          w-[900px]
-          h-[900px]
-          rounded-full
-          bg-white/5
-          blur-[220px]
-          -z-10
+          bg-[radial-gradient(circle_at_center,transparent_20%,rgba(0,0,0,0.82)_100%)]
         "
       />
 
@@ -83,7 +64,7 @@ function Hero() {
               w-full
               max-w-full
               sm:max-w-xl
-              lg:max-w-[760px]
+              lg:max-w-[700px]
             "
           >
 
@@ -113,7 +94,7 @@ function Hero() {
 
                 sm:text-[66px]
                 md:text-[82px]
-                lg:text-[105px]
+                lg:text-[96px]
               "
             >
               Crafting Stories
@@ -132,7 +113,7 @@ function Hero() {
                 sm:text-lg
                 leading-7
                 sm:leading-8
-                text-gray-300
+                text-gray-200
               "
             >
               At CL Studios, we craft cinematic stories that help brands

@@ -6,27 +6,24 @@ function TeamSection() {
   return (
     <section
       id="team"
-      className="py-20 md:py-28 lg:py-40 bg-[#050505]"
+      className="bg-[#050505] py-24 md:py-32 lg:py-40"
     >
       <Container>
+        {/* Heading */}
 
-        {/* Section Intro */}
-
-        <div className="grid lg:grid-cols-2 gap-20 items-center mb-24">
-
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center mb-28">
           <SectionTitle
             label="The Studio"
-            title="The People Behind The Lens."
+            title="Meet The Founders."
           />
 
-          <div className="lg:pl-10">
-
+          <div>
             <blockquote
               className="
                 font-['Syne']
                 italic
                 text-3xl
-                md:text-4xl
+                md:text-5xl
                 leading-tight
                 text-white
               "
@@ -42,135 +39,175 @@ function TeamSection() {
               it all works.”
             </blockquote>
 
-            <p
-              className="
-                mt-10
-                max-w-lg
-                text-lg
-                leading-9
-                text-gray-400
-              "
-            >
-              Meet the people turning ideas into unforgettable stories.
+            <p className="mt-8 max-w-lg text-lg leading-8 text-gray-400">
+              Every story starts with a vision. Meet the founders behind
+              Content With Lens, shaping ideas into cinematic experiences.
             </p>
-
           </div>
-
         </div>
 
-        {/* Team Cards */}
+        {/* Founders */}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          {team.map((member) => (
-
-            <div
-              key={member.id}
-              className="
-                group
-                relative
-                overflow-hidden
-                rounded-[30px]
-                border
-                border-white/10
-                bg-[#0b0b0b]
-                transition-all
-                duration-500
-                hover:-translate-y-2
-                hover:border-white/20
-              "
-            >
-
-              <div className="aspect-[4/5] overflow-hidden">
-
-                <img
-                  src={member.image}
-                  alt={member.name}
-                  className="
-                    w-full
-                    h-full
-                    object-cover
-                    transition-transform
-                    duration-700
-                    group-hover:scale-110
-                  "
-                />
-
-              </div>
-
+        <div className="max-w-7xl mx-auto space-y-32 lg:space-y-40">
+          {team.map((member, index) => (
+            <div key={member.id}>
               <div
-                className="
-                  absolute
-                  inset-0
-                  bg-gradient-to-t
-                  from-black
-                  via-black/40
-                  to-transparent
-                "
-              />
+                className={`
+                  group
+                  relative
+                  overflow-hidden
+                  rounded-[36px]
+                  border
+                  border-white/10
+                  bg-[#090909]
+                  transition-all
+                  duration-700
+                  hover:-translate-y-1
+                  hover:border-white/20
+                  hover:shadow-[0_25px_70px_rgba(255,255,255,0.04)]
 
-              <div
-                className="
-                  absolute
-                  bottom-0
-                  left-0
-                  w-full
-                  p-8
-                "
+                  flex
+                  flex-col
+
+                  ${
+                    index % 2 === 0
+                      ? "lg:flex-row"
+                      : "lg:flex-row-reverse"
+                  }
+                `}
               >
+                {/* IMAGE */}
+
+                <div className="relative lg:w-[58%] overflow-hidden">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="
+                      w-full
+                      h-[420px]
+                      md:h-[520px]
+                      lg:h-[620px]
+                      object-cover
+                      transition-transform
+                      duration-[1200ms]
+                      ease-out
+                      group-hover:scale-105
+                    "
+                  />
+
+                  {/* Cinematic Overlay */}
+
+                  <div
+                    className="
+                      absolute
+                      inset-0
+                      bg-gradient-to-t
+                      from-black/70
+                      via-black/20
+                      to-transparent
+                    "
+                  />
+
+                  {/* Soft Vignette */}
+
+                  <div
+                    className="
+                      absolute
+                      inset-0
+                      bg-black/10
+                    "
+                  />
+                </div>
+
+                {/* CONTENT */}
 
                 <div
                   className="
-                    h-[2px]
-                    w-14
-                    bg-red-500
-                    mb-6
-                    transition-all
-                    duration-500
-                    group-hover:w-24
-                  "
-                />
-
-                <h3
-                  className="
-                    font-['Syne']
-                    text-2xl
-                    font-semibold
-                    text-white
+                    lg:w-[42%]
+                    flex
+                    items-center
+                    px-8
+                    md:px-12
+                    lg:px-16
+                    py-12
                   "
                 >
-                  {member.name}
-                </h3>
+                  <div>
+                    {/* Accent */}
 
-                <p className="mt-2 text-gray-300">
-                  {member.role}
-                </p>
+                    <div
+                      className="
+                        h-[2px]
+                        w-16
+                        bg-red-500
+                        mb-8
+                        transition-all
+                        duration-500
+                        group-hover:w-28
+                      "
+                    />
 
-                <p
-                  className="
-                    mt-6
-                    text-sm
-                    leading-7
-                    text-gray-400
-                    opacity-0
-                    translate-y-4
-                    transition-all
-                    duration-500
-                    group-hover:opacity-100
-                    group-hover:translate-y-0
-                  "
-                >
-                  "{member.quote}"
-                </p>
+                    <p
+                      className="
+                        uppercase
+                        tracking-[0.4em]
+                        text-xs
+                        text-gray-500
+                        mb-5
+                      "
+                    >
+                      {member.designation}
+                    </p>
 
+                    <h3
+                      className="
+                        font-['Syne']
+                        text-4xl
+                        md:text-5xl
+                        leading-[1.05]
+                        text-white
+                        font-semibold
+                      "
+                    >
+                      {member.name}
+                    </h3>
+
+                    <p
+                      className="
+                        mt-5
+                        text-xl
+                        text-gray-300
+                        leading-relaxed
+                      "
+                    >
+                      {member.role}
+                    </p>
+
+                    <p
+                      className="
+                        mt-10
+                        text-gray-400
+                        leading-8
+                        text-lg
+                        max-w-md
+                      "
+                    >
+                      "{member.quote}"
+                    </p>
+                  </div>
+                </div>
               </div>
 
+              {/* Divider */}
+
+              {index !== team.length - 1 && (
+                <div className="flex justify-center mt-16 lg:mt-20">
+                  <div className="h-px w-40 md:w-64 bg-white/10" />
+                </div>
+              )}
             </div>
-
           ))}
-
         </div>
-
       </Container>
     </section>
   );

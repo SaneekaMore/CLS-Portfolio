@@ -69,7 +69,7 @@ function Navbar() {
         `}
       >
         <Container>
-          <nav className="flex items-center justify-between py-5 sm:py-6 lg:py-8">
+          <nav className="flex items-center justify-between py-4 sm:py-5">
 
             <Link
               to="/"
@@ -80,52 +80,47 @@ function Navbar() {
                 src={logoWhite}
                 alt="Content With Lens"
                 className="
-                  w-10
-                  h-10
-                  sm:w-12
-                  sm:h-12
-                  lg:w-14
-                  lg:h-14
-                  object-contain
-                  drop-shadow-[0_0_10px_rgba(255,255,255,0.18)]
-                  transition-all
-                  duration-300
-                  hover:scale-105
+                w-11
+                h-11
+                sm:w-14
+                sm:h-14
+                object-contain
+                drop-shadow-[0_0_10px_rgba(255,255,255,0.18)]
+                transition-all
+                duration-300
+                hover:scale-105
                 "
               />
-
-              <div>
-
+              <div
+                className="
+                  flex
+                  items-center
+                  translate-y-[3px]
+                  whitespace-nowrap
+                "
+              >
                 <h1
                   className="
                     font-['Syne']
-                    text-base
-                    sm:text-lg
-                    lg:text-xl
-                    leading-none
-                    tracking-[0.22em]
-                    font-bold
+                    text-xl
+                    sm:text-2xl
+                    tracking-[0.02em]
                     text-white
+                    leading-none
                   "
                 >
-                  CONTENT
+                  <span className="font-extrabold">
+                    CONTENT
+                  </span>
+
+                  <span className="font-normal px-2 uppercase">
+                    WITH
+                  </span>
+
+                  <span className="font-extrabold">
+                    LENS
+                  </span>
                 </h1>
-
-                <p
-                  className="
-                    mt-1
-                    text-[8px]
-                    sm:text-[10px]
-                    lg:text-[11px]
-                    uppercase
-                    tracking-[0.30em]
-                    sm:tracking-[0.42em]
-                    text-gray-400
-                  "
-                >
-                  WITH LENS
-                </p>
-
               </div>
 
             </Link>
