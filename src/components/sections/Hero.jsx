@@ -7,6 +7,7 @@ function Hero() {
     <section className="relative min-h-screen overflow-hidden">
 
       {/* Background Image */}
+
       <img
         src={heroImage}
         alt="Content With Lens Team"
@@ -16,7 +17,13 @@ function Hero() {
           w-full
           h-full
           object-cover
-          object-[65%_center]
+
+          object-[72%_center]
+          sm:object-[68%_center]
+          lg:object-[65%_center]
+
+          scale-100
+
           -z-30
           select-none
           pointer-events-none
@@ -24,25 +31,27 @@ function Hero() {
       />
 
       {/* Cinematic Overlay */}
+
       <div
         className="
           absolute
           inset-0
           -z-20
           bg-gradient-to-r
-          from-black/88
-          via-black/55
-          to-black/82
+          from-black/90
+          via-black/60
+          to-black/80
         "
       />
 
       {/* Vignette */}
+
       <div
         className="
           absolute
           inset-0
           -z-20
-          bg-[radial-gradient(circle_at_center,transparent_20%,rgba(0,0,0,0.82)_100%)]
+          bg-[radial-gradient(circle_at_center,transparent_18%,rgba(0,0,0,0.82)_100%)]
         "
       />
 
@@ -53,8 +62,11 @@ function Hero() {
             min-h-screen
             flex
             items-center
-            pt-24
-            sm:pt-28
+
+            pt-36
+            pb-24
+
+            sm:pt-32
             lg:pt-36
           "
         >
@@ -62,7 +74,7 @@ function Hero() {
           <div
             className="
               w-full
-              max-w-full
+              max-w-[340px]
               sm:max-w-xl
               lg:max-w-[700px]
             "
@@ -73,7 +85,7 @@ function Hero() {
                 uppercase
                 text-[10px]
                 sm:text-xs
-                tracking-[0.28em]
+                tracking-[0.18em]
                 sm:tracking-[0.45em]
                 text-gray-400
                 mb-5
@@ -86,11 +98,12 @@ function Hero() {
             <h1
               className="
                 font-['Syne']
-                text-[48px]
-                leading-[0.92]
-                tracking-[-0.05em]
                 font-bold
                 text-white
+                tracking-[-0.05em]
+
+                text-[52px]
+                leading-[0.92]
 
                 sm:text-[66px]
                 md:text-[82px]
@@ -108,29 +121,38 @@ function Hero() {
               className="
                 mt-6
                 sm:mt-8
+
                 max-w-[620px]
+
                 text-[16px]
                 sm:text-lg
+
                 leading-7
                 sm:leading-8
+
                 text-gray-200
               "
             >
               At CL Studios, we craft cinematic stories that help brands
-              connect, inspire and leave lasting impressions through
-              films, commercials, photography and digital content.
+              connect, inspire and leave lasting impressions through films,
+              commercials, photography and digital content.
             </p>
 
-            <div className="mt-8 sm:mt-12">
+            <div className="mt-10 sm:mt-12 w-full sm:w-auto">
+
               <Button
+                className="w-full sm:w-auto"
                 onClick={() =>
                   document
                     .getElementById("work")
-                    ?.scrollIntoView({ behavior: "smooth" })
+                    ?.scrollIntoView({
+                      behavior: "smooth",
+                    })
                 }
               >
                 View Our Work
               </Button>
+
             </div>
 
           </div>
@@ -140,6 +162,7 @@ function Hero() {
       </Container>
 
       {/* Bottom Fade */}
+
       <div
         className="
           pointer-events-none
@@ -155,13 +178,16 @@ function Hero() {
       />
 
       {/* Scroll Indicator */}
+
       <div
         className="
           absolute
-          bottom-5
+          bottom-6
           sm:bottom-8
+
           left-1/2
           -translate-x-1/2
+
           flex
           flex-col
           items-center
@@ -180,7 +206,14 @@ function Hero() {
           Scroll
         </p>
 
-        <span className="mt-2 text-xl sm:text-2xl animate-bounce">
+        <span
+          className="
+            mt-2
+            text-xl
+            sm:text-2xl
+            animate-bounce
+          "
+        >
           ↓
         </span>
 
