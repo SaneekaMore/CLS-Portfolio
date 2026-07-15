@@ -80,11 +80,12 @@ function Navbar() {
                 src={logoWhite}
                 alt="Content With Lens"
                 className="
-                w-11
-                h-11
+                w-10
+                h-10
                 sm:w-14
                 sm:h-14
                 object-contain
+                shrink-0
                 drop-shadow-[0_0_10px_rgba(255,255,255,0.18)]
                 transition-all
                 duration-300
@@ -97,16 +98,19 @@ function Navbar() {
                   items-center
                   translate-y-[3px]
                   whitespace-nowrap
+                  min-w-0
                 "
               >
                 <h1
                   className="
-                    font-['Syne']
-                    text-xl
-                    sm:text-2xl
-                    tracking-[0.02em]
-                    text-white
-                    leading-none
+                  font-['Syne']
+                  text-[15px]
+                  xs:text-[16px]
+                  sm:text-2xl
+                  tracking-[0.01em]
+                  text-white
+                  leading-none
+                  truncate
                   "
                 >
                   <span className="font-extrabold">
@@ -128,7 +132,7 @@ function Navbar() {
             <button
               onClick={() => setMenuOpen(!menuOpen)}
               className="
-                mr-4
+                mr-2
                 sm:mr-6
                 lg:mr-12
                 w-11
