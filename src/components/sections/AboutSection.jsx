@@ -37,11 +37,11 @@ function AboutSection() {
             <p className="text-lg leading-5 text-gray-300 mb-2">
               At CL Studios, we believe every brand has a story worth telling.
               Ours just happens to involve cameras, coffee, countless retakes,
-              and the occasional <span className="italic">"one last shot"</span>
+              and the occasional <span className="italic">"one last shot" </span>
               that somehow turns into twenty more.
             </p>
 
-            <p className="text-lg leading-4 text-gray-400">
+            <p className="text-lg leading-5 text-gray-400">
               We blend storytelling, strategy, and cinematic execution to
               create content that feels human. Whether it's a brand film,
               commercial, corporate film, or social media campaign, we create

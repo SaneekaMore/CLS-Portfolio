@@ -4,6 +4,8 @@ import Container from "../ui/Container";
 const services = [
   "Brand Films",
   "Commercial Production",
+  "Full Event Coverage",
+  "Live Broadcasting",
   "Social Media Content",
   "Product Films",
   "Photography",
@@ -33,12 +35,14 @@ function Services() {
           <h2
             className="
             font-['Syne']
-            text-5xl
+            text-4xl
+            sm:text-5xl
             md:text-6xl
-            lg:text-4xl sm:text-5xl lg:text-7xl
+            lg:text-7xl
             font-bold
             leading-[0.95]
-            tracking-[-0.04em]"
+            tracking-[-0.04em]
+            "
           >
             Everything You Need.
             <br />

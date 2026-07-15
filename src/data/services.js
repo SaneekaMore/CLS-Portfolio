@@ -1,72 +1,39 @@
 const services = [
   {
-    id: 1,
+    number: "01",
     title: "Brand Films",
-    description:
-      "Tell your brand's story through cinematic visuals crafted to build trust, emotion and lasting impressions.",
   },
-
   {
-    id: 2,
+    number: "02",
     title: "Commercial Production",
-    description:
-      "Creative advertisements designed to capture attention and drive engagement.",
   },
-
   {
-    id: 3,
+    number: "03",
     title: "Social Media Content",
-    description:
-      "High-performing reels, short-form videos and campaigns built for digital platforms.",
   },
-
   {
-    id: 4,
+    number: "04",
     title: "Product Films",
-    description:
-      "Premium visuals that highlight every product detail beautifully.",
   },
-
   {
-    id: 5,
+    number: "05",
     title: "Photography",
-    description:
-      "Corporate, lifestyle, product, fashion and event photography.",
   },
-
   {
-    id: 6,
+    number: "06",
     title: "Corporate Films",
-    description:
-      "Professional films for businesses, employer branding and company profiles.",
   },
-
   {
-    id: 7,
+    number: "07",
     title: "Drone Cinematography",
-    description:
-      "Aerial visuals that add cinematic scale and perspective.",
   },
-
   {
-    id: 8,
-    title: "Creative Direction",
-    description:
-      "Concept development, scripting, moodboards and campaign planning.",
+    number: "08",
+    title: "Full Event Coverage",
   },
-
   {
-    id: 9,
-    title: "Post Production",
-    description:
-      "Editing, motion graphics, sound design and professional color grading.",
-  },
-
-  {
-    id: 10,
-    title: "Content Strategy",
-    description:
-      "Helping brands build meaningful digital content consistently.",
+    number: "09",
+    title: "Live Broadcasting",
   },
 ];
 
