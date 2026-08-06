@@ -10,12 +10,23 @@ function WorkSection() {
       className="py-20 md:py-28 lg:py-40 bg-[#050505]"
     >
       <Container>
+
         <SectionTitle
           label="Selected Work"
           title="Featured Projects"
         />
 
-        <div className="grid lg:grid-cols-2 gap-10 mt-20">
+        <div
+          className="
+            mt-16
+            grid
+            grid-cols-1
+            sm:grid-cols-2
+            xl:grid-cols-3
+            gap-6
+            lg:gap-8
+          "
+        >
           {work.map((project) => (
             <a
               key={project.id}
@@ -25,16 +36,21 @@ function WorkSection() {
               className="
                 group
                 overflow-hidden
-                rounded-[32px]
+                rounded-[24px]
                 border
                 border-white/10
                 bg-[#0b0b0b]
                 transition-all
                 duration-500
-                hover:border-white/30
+                hover:-translate-y-2
+                hover:border-white/20
               "
             >
-              <div className="aspect-[16/10] overflow-hidden bg-neutral-900">
+
+              {/* Image */}
+
+              <div className="aspect-[16/10] overflow-hidden">
+
                 <img
                   src={project.image}
                   alt={project.title}
@@ -44,39 +60,68 @@ function WorkSection() {
                     object-cover
                     transition-transform
                     duration-700
-                    group-hover:scale-110
+                    group-hover:scale-105
                   "
                 />
+
               </div>
 
-              <div className="p-8">
-                <div className="flex justify-between items-center mb-4">
-                  <p className="uppercase tracking-[0.3em] text-xs text-gray-500">
+              {/* Content */}
+
+              <div className="p-5">
+
+                <div className="flex items-center justify-between">
+
+                  <p
+                    className="
+                      uppercase
+                      tracking-[0.28em]
+                      text-[10px]
+                      text-gray-500
+                    "
+                  >
                     {project.category}
                   </p>
 
-                  <span className="text-gray-500 text-sm">
+                  <span className="text-xs text-gray-500">
                     {project.year}
                   </span>
+
                 </div>
 
-                <div className="flex justify-between items-center">
-                  <h3 className="font-['Syne'] text-3xl font-semibold">
+                <div className="mt-4 flex items-center justify-between gap-4">
+
+                  <h3
+                    className="
+                      font-['Syne']
+                      text-xl
+                      lg:text-2xl
+                      font-semibold
+                      leading-tight
+                    "
+                  >
                     {project.title}
                   </h3>
 
                   <ArrowUpRight
+                    size={24}
                     className="
+                      shrink-0
                       transition-all
                       duration-500
                       group-hover:rotate-45
+                      group-hover:text-red-500
                     "
                   />
+
                 </div>
+
               </div>
+
             </a>
           ))}
         </div>
+
       </Container>
     </section>
   );
