@@ -86,6 +86,13 @@ function Footer() {
             <div className="space-y-5">
 
               <a
+                href="mailto:info@contentwithlens.com"
+                className="block hover:text-red-500 transition"
+              >
+                info@contentwithlens.com
+              </a>
+
+              <a
                 href="mailto:contentwithlens6@gmail.com"
                 className="block hover:text-red-500 transition"
               >

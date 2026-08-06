@@ -65,8 +65,15 @@ function Contact() {
               </p>
 
               <a
-                href="mailto:contentwithlens6@gmail.com"
+                href="mailto:info@contentwithlens.com"
                 className="block text-2xl hover:text-red-500 transition"
+              >
+                info@contentwithlens.com
+              </a>
+
+              <a
+                href="mailto:contentwithlens6@gmail.com"
+                className="block mt-4 text-2xl hover:text-red-500 transition"
               >
                 contentwithlens6@gmail.com
               </a>
