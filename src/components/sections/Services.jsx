@@ -29,19 +29,20 @@ function Services() {
         <div className="mb-24">
 
           <p className="uppercase tracking-[0.45em] text-sm text-gray-500 mb-5">
-            SERVICES
+            <span className="text-[#B5121B]">●</span>
+            {" "}SERVICES
           </p>
 
           <h2
             className="
-            font-['Syne']
-            text-4xl
-            sm:text-5xl
-            md:text-6xl
-            lg:text-7xl
-            font-bold
-            leading-[0.95]
-            tracking-[-0.04em]
+              font-['Syne']
+              text-4xl
+              sm:text-5xl
+              md:text-6xl
+              lg:text-7xl
+              font-bold
+              leading-[0.95]
+              tracking-[-0.04em]
             "
           >
             Everything You Need.
@@ -58,15 +59,42 @@ function Services() {
           <div
             key={service}
             className="
-            group
-            border-t
-            border-white/10
-            py-8
-            cursor-pointer
-            transition-all
-            duration-500
-            hover:border-red-500"
+              group
+              relative
+
+              border-t
+              border-white/10
+
+              py-8
+
+              cursor-pointer
+
+              transition-all
+              duration-500
+
+              hover:border-[#B5121B]/50
+            "
           >
+
+            {/* Mobile red accent */}
+
+            <span
+              className="
+                absolute
+                left-0
+                top-1/2
+                -translate-y-1/2
+
+                w-1
+                h-8
+
+                rounded-full
+
+                bg-[#B5121B]
+
+                sm:hidden
+              "
+            />
 
             <div className="flex justify-between items-center">
 
@@ -74,22 +102,26 @@ function Services() {
 
                 <span
                   className="
-                  text-gray-600
-                  text-sm
-                  tracking-[0.3em]"
+                    text-gray-600
+                    text-sm
+                    tracking-[0.3em]
+                  "
                 >
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
                 <h3
                   className="
-                  font-['Syne']
-                  text-3xl
-                  md:text-5xl
-                  font-semibold
-                  transition-all
-                  duration-500
-                  group-hover:text-red-500"
+                    font-['Syne']
+                    text-3xl
+                    md:text-5xl
+                    font-semibold
+
+                    transition-all
+                    duration-500
+
+                    group-hover:text-[#B5121B]
+                  "
                 >
                   {service}
                 </h3>
@@ -99,10 +131,14 @@ function Services() {
               <ArrowUpRight
                 size={34}
                 className="
-                transition-all
-                duration-500
-                group-hover:rotate-45
-                group-hover:text-red-500"
+                  text-gray-400
+
+                  transition-all
+                  duration-500
+
+                  group-hover:rotate-45
+                  group-hover:text-[#B5121B]
+                "
               />
 
             </div>

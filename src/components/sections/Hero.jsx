@@ -55,6 +55,23 @@ function Hero() {
         "
       />
 
+      {/* Very subtle red cinematic glow */}
+
+      <div
+        className="
+          absolute
+          left-[20%]
+          top-[38%]
+          -z-10
+          w-[420px]
+          h-[420px]
+          rounded-full
+          bg-[#B5121B]/[0.06]
+          blur-[160px]
+          pointer-events-none
+        "
+      />
+
       <Container>
 
         <div
@@ -110,8 +127,14 @@ function Hero() {
                 lg:text-[96px]
               "
             >
-              Crafting Stories
+              Crafting{" "}
+
+              <span className="text-[#B5121B]">
+                Stories
+              </span>
+
               <br />
+
               That Stay
               <br />
               With You.
@@ -141,7 +164,13 @@ function Hero() {
             <div className="mt-10 sm:mt-12 w-full sm:w-auto">
 
               <Button
-                className="w-full sm:w-auto"
+                className="
+                  w-full
+                  sm:w-auto
+                  border-[#B5121B]/70
+                  hover:border-[#8F0D14]
+                  hover:bg-[#B5121B]/10
+                "
                 onClick={() =>
                   document
                     .getElementById("work")
@@ -150,7 +179,7 @@ function Hero() {
                     })
                 }
               >
-                View Our Work
+                View Our Work →
               </Button>
 
             </div>
@@ -211,6 +240,7 @@ function Hero() {
             mt-2
             text-xl
             sm:text-2xl
+            text-[#B5121B]
             animate-bounce
           "
         >

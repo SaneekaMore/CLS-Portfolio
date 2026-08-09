@@ -27,7 +27,9 @@ function WorkSection() {
             lg:gap-8
           "
         >
+
           {work.map((project) => (
+
             <a
               key={project.id}
               href={project.link}
@@ -35,17 +37,36 @@ function WorkSection() {
               rel="noopener noreferrer"
               className="
                 group
+                relative
                 overflow-hidden
                 rounded-[24px]
                 border
                 border-white/10
                 bg-[#0b0b0b]
+
                 transition-all
                 duration-500
+
                 hover:-translate-y-2
                 hover:border-white/20
               "
             >
+
+              {/* Subtle red accent for mobile */}
+
+              <span
+                className="
+                  absolute
+                  top-0
+                  left-6
+                  z-20
+                  w-10
+                  h-[2px]
+                  bg-[#B5121B]
+
+                  sm:hidden
+                "
+              />
 
               {/* Image */}
 
@@ -58,8 +79,10 @@ function WorkSection() {
                     w-full
                     h-full
                     object-cover
+
                     transition-transform
                     duration-700
+
                     group-hover:scale-105
                   "
                 />
@@ -89,7 +112,15 @@ function WorkSection() {
 
                 </div>
 
-                <div className="mt-4 flex items-center justify-between gap-4">
+                <div
+                  className="
+                    mt-4
+                    flex
+                    items-center
+                    justify-between
+                    gap-4
+                  "
+                >
 
                   <h3
                     className="
@@ -107,10 +138,14 @@ function WorkSection() {
                     size={24}
                     className="
                       shrink-0
+
+                      text-gray-400
+
                       transition-all
                       duration-500
+
                       group-hover:rotate-45
-                      group-hover:text-red-500
+                      group-hover:text-[#B5121B]
                     "
                   />
 
@@ -119,7 +154,9 @@ function WorkSection() {
               </div>
 
             </a>
+
           ))}
+
         </div>
 
       </Container>
