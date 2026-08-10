@@ -8,103 +8,295 @@ function AboutSection() {
     >
       <Container>
 
-        <div className="grid lg:grid-cols-2 gap-24 items-center">
+        {/* Section Label */}
 
-          {/* LEFT */}
+        <div className="flex items-center gap-4 mb-8">
+
+          <span className="block w-8 h-[2px] bg-red-500" />
+
+          <p
+            className="
+              uppercase
+              tracking-[0.45em]
+              text-xs
+              text-gray-500
+            "
+          >
+            Who We Are
+          </p>
+
+        </div>
+
+        <div
+          className="
+            grid
+            lg:grid-cols-2
+            gap-16
+            lg:gap-24
+            items-start
+          "
+        >
+
+          {/* LEFT — STORY */}
 
           <div>
 
-            <p className="uppercase tracking-[0.45em] text-sm text-gray-500 mb-5">
-              WHO WE ARE
-            </p>
-
             <h2
               className="
-              font-['Syne']
-              text-5xl
-              md:text-6xl
-              lg:text-4xl sm:text-5xl lg:text-7xl
-              font-bold
-              leading-[0.95]
-              tracking-[-0.04em]
-              mb-10"
+                font-['Syne']
+                text-5xl
+                sm:text-6xl
+                md:text-7xl
+                lg:text-[76px]
+                xl:text-[82px]
+                leading-[0.92]
+                tracking-[-0.055em]
+                font-bold
+                text-white
+              "
             >
               Stories Worth
               <br />
               Remembering.
             </h2>
 
-            <p className="text-lg leading-5 text-gray-300 mb-2">
-              At CL Studios, we believe every brand has a story worth telling.
-              Ours just happens to involve cameras, coffee, countless retakes,
-              and the occasional <span className="italic">"one last shot" </span>
-              that somehow turns into twenty more.
-            </p>
+            <div
+              className="
+                mt-10
+                max-w-[650px]
+                text-lg
+                md:text-xl
+                leading-8
+                text-gray-400
+              "
+            >
 
-            <p className="text-lg leading-5 text-gray-400">
-              We blend storytelling, strategy, and cinematic execution to
-              create content that feels human. Whether it's a brand film,
-              commercial, corporate film, or social media campaign, we create
-              visuals that connect, inspire, and stay with people long after
-              they've watched.
-            </p>
+              <p>
+                At CL Studios, we believe every brand has a story worth
+                telling. Ours just happens to involve cameras, coffee,
+                countless retakes, and the occasional{" "}
+                <em className="text-gray-300">
+                  "one last shot"
+                </em>{" "}
+                that somehow turns into twenty more.
+              </p>
 
-            <p className="mt-10 text-2xl font-semibold text-white">
+              <p className="mt-5">
+                We blend storytelling, strategy, and cinematic execution to
+                create content that feels human. Whether it's a brand film,
+                commercial, corporate film, or social media campaign, we
+                create visuals that connect, inspire, and stay with people
+                long after they've watched.
+              </p>
+
+            </div>
+
+            {/* Closing Statement */}
+
+            <p
+              className="
+                mt-12
+                font-['Syne']
+                text-2xl
+                md:text-3xl
+                font-semibold
+                leading-tight
+                text-white
+              "
+            >
               Good content gets views.
               <br />
-              Great stories get remembered.
+              Great stories get{" "}
+              <span className="text-red-500">
+                remembered.
+              </span>
             </p>
 
           </div>
 
-          {/* RIGHT */}
+          {/* RIGHT — STATS */}
 
-          <div className="grid grid-cols-2 gap-6">
+          <div
+            className="
+              grid
+              grid-cols-1
+              sm:grid-cols-2
+              gap-5
+              lg:pt-8
+            "
+          >
 
-            <div className="border border-white/10 rounded-3xl p-5 md:p-8 bg-white/5 backdrop-blur-sm">
+            {/* Card 1 */}
 
-              <h3 className="text-5xl font-bold mb-4">3+</h3>
+            <div
+              className="
+                min-h-[190px]
+                rounded-[28px]
+                border
+                border-white/10
+                bg-white/[0.035]
+                p-8
+                md:p-10
+                transition-all
+                duration-500
+                hover:border-red-500/30
+              "
+            >
+              <h3
+                className="
+                  font-['Syne']
+                  text-5xl
+                  md:text-6xl
+                  font-bold
+                  text-white
+                "
+              >
+                3+
+              </h3>
 
-              <p className="uppercase tracking-[0.3em] text-sm text-gray-400">
-                Years Creating Stories
+              <p
+                className="
+                  mt-6
+                  uppercase
+                  tracking-[0.3em]
+                  text-xs
+                  leading-6
+                  text-gray-500
+                "
+              >
+                Years Creating
+                <br />
+                Stories
               </p>
-
             </div>
 
-            <div className="border border-white/10 rounded-3xl p-5 md:p-8 bg-white/5 backdrop-blur-sm">
+            {/* Card 2 */}
 
-              <h3 className="text-3xl font-bold mb-4">
+            <div
+              className="
+                min-h-[190px]
+                rounded-[28px]
+                border
+                border-white/10
+                bg-white/[0.035]
+                p-8
+                md:p-10
+                transition-all
+                duration-500
+                hover:border-red-500/30
+              "
+            >
+              <h3
+                className="
+                  font-['Syne']
+                  text-3xl
+                  md:text-4xl
+                  font-bold
+                  text-white
+                "
+              >
                 Pune
               </h3>
 
-              <p className="uppercase tracking-[0.3em] text-sm text-gray-400">
+              <p
+                className="
+                  mt-6
+                  uppercase
+                  tracking-[0.3em]
+                  text-xs
+                  text-gray-500
+                "
+              >
                 Based Studio
               </p>
-
             </div>
 
-            <div className="border border-white/10 rounded-3xl p-5 md:p-8 bg-white/5 backdrop-blur-sm">
+            {/* Card 3 */}
 
-              <h3 className="text-3xl font-bold mb-4">
+            <div
+              className="
+                min-h-[190px]
+                rounded-[28px]
+                border
+                border-white/10
+                bg-white/[0.035]
+                p-8
+                md:p-10
+                transition-all
+                duration-500
+                hover:border-red-500/30
+              "
+            >
+              <h3
+                className="
+                  font-['Syne']
+                  text-3xl
+                  md:text-4xl
+                  font-bold
+                  text-white
+                "
+              >
                 India
               </h3>
 
-              <p className="uppercase tracking-[0.3em] text-sm text-gray-400">
-                Available Nationwide
+              <p
+                className="
+                  mt-6
+                  uppercase
+                  tracking-[0.3em]
+                  text-xs
+                  leading-6
+                  text-gray-500
+                "
+              >
+                Available
+                <br />
+                Nationwide
               </p>
-
             </div>
 
-            <div className="border border-white/10 rounded-3xl p-8 bg-white/5 backdrop-blur-sm">
+            {/* Card 4 */}
 
-              <h3 className="text-3xl font-bold mb-4">
+            <div
+              className="
+                min-h-[190px]
+                rounded-[28px]
+                border
+                border-white/10
+                bg-white/[0.035]
+                p-8
+                md:p-10
+                transition-all
+                duration-500
+                hover:border-red-500/30
+              "
+            >
+              <h3
+                className="
+                  font-['Syne']
+                  text-3xl
+                  md:text-4xl
+                  font-bold
+                  text-white
+                "
+              >
                 End-to-End
               </h3>
 
-              <p className="uppercase tracking-[0.3em] text-sm text-gray-400">
-                Creative Production
+              <p
+                className="
+                  mt-6
+                  uppercase
+                  tracking-[0.3em]
+                  text-xs
+                  leading-6
+                  text-gray-500
+                "
+              >
+                Creative
+                <br />
+                Production
               </p>
-
             </div>
 
           </div>
