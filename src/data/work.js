@@ -13,12 +13,21 @@ const work = [
     title: "Concerts",
     category: "Live Entertainment",
     year: "2026",
-    image: "/images/projects/concerts.jpg",
+    image: "/images/projects/concerts.JPG",
     link: "https://drive.google.com/drive/folders/1cHG89QzF0U9jfC8FPyf9jFI2ip4mewb3",
   },
 
   {
-    id: 3,
+  id: 3,
+  title: "Coaches",
+  category: "Full Event Coverage",
+  year: "2026",
+  image: "/images/projects/Coaches.JPG",
+  link: "https://drive.google.com/drive/folders/10xTZyf0sb8hiRppRqYYaGm6UI-m__1PV",
+  },
+
+  {
+    id: 4,
     title: "Corporate Events",
     category: "Corporate",
     year: "2026",
@@ -27,7 +36,7 @@ const work = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Industrial Films",
     category: "Industrial",
     year: "2026",
@@ -36,7 +45,7 @@ const work = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Product Photography",
     category: "Photography",
     year: "2026",
@@ -45,7 +54,7 @@ const work = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "Interior Shoot",
     category: "Photography",
     year: "2026",
@@ -54,7 +63,7 @@ const work = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Drone Photography",
     category: "Aerial",
     year: "2026",
@@ -63,7 +72,7 @@ const work = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Podcast Shoot",
     category: "Studio Production",
     year: "2026",
@@ -72,7 +81,7 @@ const work = [
   },
 
   {
-    id: 9,
+    id: 10,
     title: "Course Shoot",
     category: "Educational Content",
     year: "2026",
